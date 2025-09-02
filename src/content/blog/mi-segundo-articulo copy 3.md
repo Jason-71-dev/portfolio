@@ -1,35 +1,35 @@
 ---
-title: "JavaScript:Tutorial Menú Hamburguesa"
-description: "Soy un post reciente"
-pubDate: 'Apr 30 2024'
-heroImage: "../img/monachina2.jpg"
+title: 'JavaScript : Tutoriel Menu hamburger'
+description: 'Je suis un post récent'
+pubDate: '30 avr. 2024'
+heroImage: '../img/monachina2.jpg'
 ---
 
-## JavaScript: Explorando Funciones y Comprendiendo Variables
+## JavaScript : Explorer les Fonctions et Comprendre les Variables
 
 ![javascript image](/img/monachina2.jpg)
 
-En esta segunda entrega de nuestra guía práctica de JavaScript, nos sumergiremos en el fascinante mundo de las funciones y exploraremos las sutilezas entre `var`, `let` y `const`. Prepárate para desentrañar estos conceptos cruciales en tu viaje por el desarrollo web.
+Dans cette deuxième partie de notre guide pratique sur JavaScript, nous allons plonger dans l’univers fascinant des fonctions et explorer les subtilités entre `var`, `let` et `const`. Prépare-toi à démêler ces concepts essentiels dans ton parcours de développement web.
 
-## Funciones en JavaScript
+## Fonctions en JavaScript
 
-Las funciones son bloques de código reutilizables que realizan una tarea específica. Crear una función implica dos pasos fundamentales: la declaración y la ejecución.
+Les fonctions sont des blocs de code réutilisables qui réalisent une tâche précise. Créer une fonction implique deux étapes fondamentales : la déclaration et l’exécution.
 
-### Declaración de Funciones
+### Déclaration de Fonctions
 
 ```javascript
-function saludar(nombre) {
-  console.log(`¡Hola, ${nombre}!`);
+function saluer(nom) {
+	console.log(`Bonjour, ${nom} !`);
 }
 ```
 
-Aquí, `saludar` es el nombre de la función, y `(nombre)` son los parámetros que puede aceptar.
+Ici, `saluer` est le nom de la fonction, et `(nom)` sont les paramètres qu’elle peut accepter.
 
-### Ejecución de Funciones
+### Exécution de Fonctions
 
 ```javascript
-saludar("Juan");
-// Salida: ¡Hola, Juan!
+saluer('Jean');
+// Sortie : Bonjour, Jean !
 ```
 
 Al llamar a la función `saludar` con el argumento `"Juan"`, ejecutamos el código dentro de la función y obtenemos la salida esperada.
@@ -39,116 +39,116 @@ Al llamar a la función `saludar` con el argumento `"Juan"`, ejecutamos el códi
 #### Funciones con Valor de Retorno
 
 ```javascript
-function sumar(a, b) {
-  return a + b;
+function addition(a, b) {
+	return a + b;
 }
 
-let resultado = sumar(3, 5);
-// resultado: 8
+let resultat = addition(3, 5);
+// resultat: 8
 ```
 
-#### Funciones Anónimas
+#### Fonction anonyme
 
 ```javascript
-let saludar = function(nombre) {
-  console.log(`¡Hola, ${nombre}!`);
+let saluer = function (nombre) {
+	console.log(`Salut, ${nombre}`);
 };
 
-saludar("Ana");
-// Salida: ¡Hola, Ana!
+saluer('Ana');
+// Saluer: Salut, Ana
 ```
 
-#### Arrow Functions
+#### Fonctions flecher
 
 ```javascript
-let multiplicar = (a, b) => a * b;
+let multiplication = (a, b) => a * b;
 
-let producto = multiplicar(4, 6);
-// producto: 24
+let product = multiplication(4, 6);
+// product: 24
 ```
 
-Las funciones de flecha (`arrow functions`) son una forma más concisa de escribir funciones.
+Les fonctions fléchées (`arrow functions`) sont une forme plus concise d’écrire des fonctions.
 
-## Variables: var, let y const
+## Variables : var, let et const
 
 ### `var`
 
 ```javascript
-function ejemploVar() {
-  if (true) {
-    var x = 10;
-  }
-  console.log(x);
+function exempleVar() {
+	if (true) {
+		var x = 10;
+	}
+	console.log(x);
 }
 
-ejemploVar();
-// Salida: 10
+exempleVar();
+// Sortie : 10
 ```
 
-`var` tiene un ámbito de función, lo que significa que su declaración se eleva al nivel superior de su contexto de ejecución.
+`var` a une portée de fonction, ce qui signifie que sa déclaration est remontée au niveau supérieur de son contexte d’exécution.
 
 ### `let`
 
 ```javascript
-function ejemploLet() {
-  if (true) {
-    let y = 20;
-  }
-  console.log(y); // ¡Error!
+function exempleLet() {
+	if (true) {
+		let y = 20;
+	}
+	console.log(y); // Erreur
 }
 
-ejemploLet();
+exempleLet();
 ```
 
-`let` tiene un ámbito de bloque, lo que significa que está limitado al bloque de código más cercano.
+`let` a une portée de bloc, ce qui signifie qu’il est limité au bloc de code le plus proche.
 
 ### `const`
 
 ```javascript
-function ejemploConst() {
-  const PI = 3.14;
-  console.log(PI);
+function exempleConst() {
+	const PI = 3.14;
+	console.log(PI);
 }
 
-ejemploConst();
-// Salida: 3.14
+exempleConst();
+// Sortie: 3.14
 ```
 
-En este ejemplo, `const` se utiliza para declarar una constante `PI` y se le asigna el valor de `3.14`. Aunque es posible asignar un valor a `const` solo una vez, ten en cuenta que esto no impide que el contenido del objeto al que se refiere cambie si es un objeto mutable.
+Dans cet exemple, `const` est utilisé pour déclarer une constante `PI` et on lui assigne la valeur `3.14`. Bien qu’il soit possible d’assigner une valeur à `const` une seule fois, garde à l’esprit que cela n’empêche pas le contenu de l’objet auquel il se réfère de changer s’il s’agit d’un objet mutable.
 
 ## Scope en JavaScript
 
-El scope se refiere a la accesibilidad y visibilidad de las variables en diferentes partes del código.
+Le scope fait référence à l’accessibilité et à la visibilité des variables dans différentes parties du code.
 
 ### Scope Global
 
 ```javascript
-let globalVar = "Soy global";
+let globalVar = 'Je suis global';
 
-function ejemploScopeGlobal() {
-  console.log(globalVar);
+function exempleScopeGlobal() {
+	console.log(globalVar);
 }
 
-ejemploScopeGlobal();
-// Salida: Soy global
+exempleScopeGlobal();
+// Sortie: Je suis global
 ```
 
 ### Scope Local
 
 ```javascript
-function ejemploScopeLocal() {
-  let localVar = "Soy local";
-  console.log(localVar);
+function exempleScopeLocal() {
+	let localVar = 'Je suis local';
+	console.log(localVar);
 }
 
 ejemploScopeLocal();
-// Salida: Soy local
+// Sortie: Je suis local
 
-console.log(localVar); // ¡Error!
+console.log(localVar); // Erreur
 ```
 
-Las variables declaradas con `let` y `const` tienen un ámbito de bloque, limitando su accesibilidad al bloque en el que se declaran.
+Les variables déclarés avec `let` et `const` ont une portée de bloc, ce qui limite leur accessibilité au bloc dans lequel elles sont déclarées.
 
-## Conclusión
+## Conclusion
 
-En esta parte de nuestra guía de JavaScript, hemos explorado cómo crear y ejecutar funciones, así como las diferencias entre `var`, `let` y `const`. Entender estos conceptos es esencial para construir aplicaciones sólidas y comprender cómo las variables afectan el flujo y la estructura de tu código. En la próxima entrega, nos sumergiremos en conceptos más avanzados y te llevaremos a través de ejercicios prácticos para consolidar tus conocimientos. ¡Sigue explorando y desbloquea el potencial de JavaScript en tus proyectos web! 🚀✨
+Dans cette partie de notre guide JavaScript, nous avons exploré comment créer et exécuter des fonctions, ainsi que les différences entre `var`, `let` et `const`. Comprendre ces concepts est essentiel pour construire des applications solides et comprendre comment les variables influencent le flux et la structure de ton code. Dans la prochaine partie, nous plongerons dans des concepts plus avancés et nous te proposerons des exercices pratiques pour consolider tes connaissances. Continue à explorer et libère le potentiel de JavaScript dans tes projets web ! 🚀✨
