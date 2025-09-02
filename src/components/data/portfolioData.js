@@ -17,46 +17,42 @@
  */
 export const portafolioData = [
 	{
-		imgSrc: '/public/assets/crypto.png',
+		imgSrc: '/assets/crypto.png',
 		title: 'Crypto-Watcher',
 		skills: ['NodeJs', 'CSS'],
 		descripcion:
 			'Un petit projet sur les cryptomonnaie, je devais récupérer les prix de quelques crypto sur une api et les mettres a jour en temps réel',
-			repoURL: 'https://github.com/Jason-71-dev',
+		repoURL: 'https://github.com/Jason-71-dev',
 		anim: 'fade-right',
 	},
 	{
-		imgSrc: '/public/assets/lucien.png',
+		imgSrc: '/assets/lucien.png',
 		title: 'Vert & Nature',
 		skills: ['Html', 'Bootstrap'],
-		descripcion:
-			'Landing-page Bootstrap',
-		
+		descripcion: 'Landing-page Bootstrap',
+
 		repoURL: 'https://github.com/Jason-71-dev',
 		anim: 'fade-up',
 		averageBrightness: 0.1,
 	},
 	{
-		imgSrc: '/public/assets/loopstudios.png',
+		imgSrc: '/assets/loopstudios.png',
 		title: 'loopstudios',
 		skills: ['Html', 'CSS'],
-		descripcion:
-			"Projet d'intégration avec menu burger",
-		
+		descripcion: "Projet d'intégration avec menu burger",
+
 		repoURL: 'https://github.com/Jason-71-dev',
 		anim: 'fade-left',
 	},
 	{
-		imgSrc: '/public/assets/Eterball.png',
+		imgSrc: '/assets/Eterball.png',
 		title: 'Eterball',
 		skills: ['React', 'Sass'],
-		descripcion:
-			'Mon projet personnel pour le titre de DWWM',
-		
+		descripcion: 'Mon projet personnel pour le titre de DWWM',
+
 		repoURL: 'https://github.com/Jason-71-dev',
 		anim: 'fade-left',
 	},
-	
 ];
 
 const skillIcons = {
@@ -68,7 +64,7 @@ const skillIcons = {
 	StyledComponents: 'skill-icons:styledcomponents',
 	Bootstrap: 'skill-icons:bootstrap',
 	Tailwind: 'skill-icons:tailwindcss-dark',
-	Html: 'skill-icons:html'
+	Html: 'skill-icons:html',
 };
 
 /**
