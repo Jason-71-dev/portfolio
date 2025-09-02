@@ -1,0 +1,28 @@
+---
+import SocialIcons from '../SocialIcons.astro';
+import Title from '../atoms/Title.astro';
+import "./about.css"
+
+
+---
+
+<section id="about" class="about">
+	<div class="about__container">
+		<img
+			class="about__img"
+			src="/public/img/moi.png"
+			alt="Foto de perfil de Jason Villin"
+		/>
+
+		<div class="about__content">
+			<Title margin="1rem" contenido="Parcours" />
+			<p class="about__text">
+				Actuellement en formation pour le titre pro : Développeur Web et Web Moible.
+
+          Je suis en reconversion proféssionnelle suite à des soucis de santé lié a mon ancien travail, étant passionné d'informatique choisir le développement web était une évidence.
+			</p>
+			<SocialIcons width="25" height="25"/>
+		</div>
+	</div>
+
+</section>
