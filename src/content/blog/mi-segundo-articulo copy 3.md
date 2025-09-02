@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript : Tutoriel Menu hamburger'
 description: 'Je suis un post récent'
-pubDate: '30 avr. 2024'
+pubDate: 'Apr 30 2024'
 heroImage: '../img/monachina2.jpg'
 ---
 
